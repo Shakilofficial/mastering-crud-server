@@ -1,6 +1,4 @@
-# mastering-crud-server
-
-# Clean Co Server
+# mastering-crud-server(Clean Co Server)
 
 This is the server for the Clean Co application.
 
@@ -19,3 +17,5 @@ This is the server for the Clean Co application.
 ## Endpoints
 
 - `GET /`: Get data from Clean Co.
+
+#### Created By - Md Shakil Hossain
