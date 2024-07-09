@@ -1,0 +1,90 @@
+[
+  {
+    "name": "Standard Cleaning",
+    "description": "Basic cleaning service for regular upkeep.",
+    "price": 50,
+    "features": [
+      "Dusting and vacuuming",
+      "Mopping floors",
+      "Cleaning bathrooms",
+      "Taking out trash"
+    ]
+  },
+  {
+    "name": "Deep Cleaning",
+    "description": "Comprehensive cleaning service for a thorough clean.",
+    "price": 120,
+    "features": [
+      "Cleaning under furniture",
+      "Detailed bathroom cleaning",
+      "Scrubbing kitchen appliances",
+      "Baseboard cleaning"
+    ]
+  },
+  {
+    "name": "Move-In/Move-Out Cleaning",
+    "description": "Specialized service for moving in or out of a home.",
+    "price": 150,
+    "features": [
+      "Complete home cleaning",
+      "Cleaning inside cabinets and drawers",
+      "Cleaning inside closets",
+      "Removing any leftover debris"
+    ]
+  },
+  {
+    "name": "Office Cleaning",
+    "description": "Professional cleaning for office spaces.",
+    "price": 200,
+    "features": [
+      "Desk and workstation cleaning",
+      "Common area cleaning",
+      "Restroom sanitization",
+      "Trash removal"
+    ]
+  },
+  {
+    "name": "Post-Construction Cleaning",
+    "description": "Specialized cleaning service after construction work.",
+    "price": 300,
+    "features": [
+      "Removal of construction dust",
+      "Cleaning windows and frames",
+      "Cleaning light fixtures",
+      "Sanitizing all surfaces"
+    ]
+  },
+  {
+    "name": "Carpet Cleaning",
+    "description": "Deep cleaning for carpets to remove dirt and stains.",
+    "price": 100,
+    "features": [
+      "Steam cleaning",
+      "Stain removal",
+      "Deodorizing",
+      "Protective coating"
+    ]
+  },
+  {
+    "name": "Window Cleaning",
+    "description": "Professional window cleaning inside and out.",
+    "price": 80,
+    "features": [
+      "Interior window cleaning",
+      "Exterior window cleaning",
+      "Screen cleaning",
+      "Window track cleaning"
+    ]
+  },
+  {
+    "name": "Upholstery Cleaning",
+    "description": "Cleaning service for furniture upholstery.",
+    "price": 90,
+    "features": [
+      "Vacuuming upholstery",
+      "Stain treatment",
+      "Steam cleaning",
+      "Deodorizing"
+    ]
+  }
+]
