@@ -20,7 +20,7 @@ async function connectDB() {
     database = client.db(dbName); // Use the specified database name
     await client.db("admin").command({ ping: 1 });
     console.log(
-      `Pinged successfully connected to database: ${dbName}`
+      `Pinged successfully and connected to database: ${dbName}`
     );
   } catch (err) {
     console.error("Failed to connect to MongoDB", err);
