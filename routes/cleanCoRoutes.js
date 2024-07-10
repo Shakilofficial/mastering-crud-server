@@ -1,23 +1,27 @@
 const express = require("express");
 const jwt = require("jsonwebtoken");
+const cookieParser = require("cookie-parser");
 const { getCollection } = require("../config/db");
 const { ObjectId } = require("mongodb");
-
 const router = express.Router();
+
+const secret = process.env.ACCESS_TOKEN_SECRET;
+
+//parser
+router.use(express.json());
+router.use(cookieParser());
 
 // Middleware for JWT verification
 const verifyToken = (req, res, next) => {
-  const authHeader = req.headers.authorization;
-  if (!authHeader) {
+  const token = req.cookies.token;
+  if (!token) {
     return res.status(401).send({ message: "Unauthorized access" });
   }
-
-  const token = authHeader.split(" ")[1];
-  jwt.verify(token, process.env.ACCESS_TOKEN_SECRET, (err, decoded) => {
+  jwt.verify(token, secret, (err, decoded) => {
     if (err) {
       return res.status(401).send({ message: "Unauthorized access" });
     }
-    req.decoded = decoded;
+    req.user = decoded;
     next();
   });
 };
@@ -30,16 +34,25 @@ router.get("/", (req, res) => {
 });
 
 // Route to fetch services
-router.get("/services", async (req, res) => {
+router.get("/services", verifyToken, async (req, res) => {
   const serviceCollection = getCollection("services");
   const result = await serviceCollection.find({}).toArray();
   res.send(result);
 });
 
-// Route to fetch all bookings
-router.get("/user/all-booking", verifyToken, async (req, res) => {
+// Route to fetch bookings by user email
+router.get("/user/bookings", verifyToken, async (req, res) => {
+  const queryEmail = req.query.email;
+  const tokenEmail = req.user.email;
+  if (queryEmail !== tokenEmail) {
+    return res.status(403).send({ message: "Forbidden Access" });
+  }
+  let query = {};
+  if (queryEmail) {
+    query.email = queryEmail;
+  }
   const bookingCollection = getCollection("bookings");
-  const result = await bookingCollection.find({}).toArray();
+  const result = await bookingCollection.find(query).toArray();
   res.send(result);
 });
 
@@ -48,11 +61,14 @@ router.get("/user/all-booking", verifyToken, async (req, res) => {
 // JWT create and send to the client
 router.post("/auth/access-token", async (req, res) => {
   const user = req.body;
-  const token = jwt.sign(user, process.env.ACCESS_TOKEN_SECRET, {
-    expiresIn: "1h",
-  });
-    res.send({ token });
-    console.log(token);
+  const token = jwt.sign(user, secret, { expiresIn: "1h" });
+  res
+    .cookie("token", token, {
+      httpOnly: true,
+      secure: false,
+      sameSite: "none",
+    })
+    .send({ success: true });
 });
 
 // Route to create a new booking from user
