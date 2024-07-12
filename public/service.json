@@ -1,0 +1,452 @@
+[
+  {
+    "name": "Premium Web Hosting",
+    "description": "High-speed, reliable web hosting with 99.9% uptime guarantee.",
+    "price": 49.99,
+    "category": "Hosting",
+    "features": [
+      "Unlimited bandwidth",
+      "Free SSL certificate",
+      "24/7 customer support"
+    ]
+  },
+  {
+    "name": "Advanced SEO Package",
+    "description": "Comprehensive SEO services to boost your website’s search engine ranking.",
+    "price": 299.99,
+    "category": "Marketing",
+    "features": [
+      "Keyword research",
+      "Backlink building",
+      "Monthly performance reports"
+    ]
+  },
+  {
+    "name": "Custom Logo Design",
+    "description": "Professional logo design tailored to your brand’s identity and vision.",
+    "price": 150,
+    "category": "Design",
+    "features": [
+      "Multiple concepts",
+      "Unlimited revisions",
+      "High-resolution files"
+    ]
+  },
+  {
+    "name": "Social Media Management",
+    "description": "Complete management of your social media profiles and engagement.",
+    "price": 400,
+    "category": "Marketing",
+    "features": ["Content creation", "Daily posting", "Analytics reports"]
+  },
+  {
+    "name": "E-commerce Development",
+    "description": "Building secure and scalable e-commerce websites for online businesses.",
+    "price": 1200,
+    "category": "Development",
+    "features": [
+      "Custom design",
+      "Payment gateway integration",
+      "Mobile optimization"
+    ]
+  },
+  {
+    "name": "Professional Photography",
+    "description": "High-quality photography services for events, products, and more.",
+    "price": 500,
+    "category": "Photography",
+    "features": ["Editing included", "Digital delivery", "Flexible scheduling"]
+  },
+  {
+    "name": "Email Marketing Campaigns",
+    "description": "Targeted email marketing strategies to grow your subscriber base.",
+    "price": 200,
+    "category": "Marketing",
+    "features": [
+      "Template design",
+      "Subscriber management",
+      "Detailed analytics"
+    ]
+  },
+  {
+    "name": "Mobile App Development",
+    "description": "Creating intuitive and user-friendly mobile applications for all platforms.",
+    "price": 2500,
+    "category": "Development",
+    "features": [
+      "Cross-platform compatibility",
+      "Custom UI/UX design",
+      "Regular updates"
+    ]
+  },
+  {
+    "name": "Corporate Video Production",
+    "description": "Producing professional videos for corporate events and promotions.",
+    "price": 1800,
+    "category": "Video",
+    "features": ["Storyboarding", "Filming", "Post-production editing"]
+  },
+  {
+    "name": "Content Writing Services",
+    "description": "High-quality content writing for blogs, websites, and marketing materials.",
+    "price": 100,
+    "category": "Writing",
+    "features": [
+      "SEO-friendly content",
+      "Unlimited revisions",
+      "Quick turnaround"
+    ]
+  },
+  {
+    "name": "Virtual Assistant Services",
+    "description": "Providing administrative support to manage your business efficiently.",
+    "price": 20,
+    "category": "Support",
+    "features": [
+      "Email management",
+      "Appointment scheduling",
+      "Customer service"
+    ]
+  },
+  {
+    "name": "Graphic Design Services",
+    "description": "Creative graphic design solutions for branding, advertising, and more.",
+    "price": 300,
+    "category": "Design",
+    "features": [
+      "Custom graphics",
+      "Print and digital formats",
+      "Unlimited revisions"
+    ]
+  },
+  {
+    "name": "IT Support Services",
+    "description": "Providing technical support to ensure smooth operation of your IT systems.",
+    "price": 100,
+    "category": "Support",
+    "features": ["Remote assistance", "System maintenance", "Network security"]
+  },
+  {
+    "name": "Cloud Storage Solutions",
+    "description": "Secure and scalable cloud storage solutions for businesses of all sizes.",
+    "price": 150,
+    "category": "Hosting",
+    "features": ["Unlimited storage", "Data encryption", "Easy file sharing"]
+  },
+  {
+    "name": "Digital Marketing Strategy",
+    "description": "Creating comprehensive digital marketing strategies to grow your business.",
+    "price": 500,
+    "category": "Marketing",
+    "features": ["Market research", "Campaign planning", "Performance tracking"]
+  },
+  {
+    "name": "Web Design Services",
+    "description": "Professional web design services to create visually appealing websites.",
+    "price": 1000,
+    "category": "Design",
+    "features": ["Custom designs", "Responsive layouts", "SEO-friendly"]
+  },
+  {
+    "name": "Network Installation",
+    "description": "Setting up secure and reliable network infrastructure for businesses.",
+    "price": 600,
+    "category": "Support",
+    "features": ["Hardware setup", "Network configuration", "Ongoing support"]
+  },
+  {
+    "name": "Cybersecurity Services",
+    "description": "Comprehensive cybersecurity solutions to protect your business data.",
+    "price": 800,
+    "category": "Support",
+    "features": [
+      "Threat detection",
+      "Vulnerability assessment",
+      "Incident response"
+    ]
+  },
+  {
+    "name": "Online Course Development",
+    "description": "Creating engaging and interactive online courses for various subjects.",
+    "price": 700,
+    "category": "Development",
+    "features": [
+      "Custom content",
+      "Multimedia integration",
+      "Learning management system"
+    ]
+  },
+  {
+    "name": "Event Photography",
+    "description": "Professional photography services for events, capturing memorable moments.",
+    "price": 400,
+    "category": "Photography",
+    "features": ["Unlimited photos", "On-site editing", "Digital delivery"]
+  },
+  {
+    "name": "Branding Services",
+    "description": "Comprehensive branding services to create a strong and unique brand identity.",
+    "price": 1200,
+    "category": "Design",
+    "features": ["Logo design", "Brand guidelines", "Marketing materials"]
+  },
+  {
+    "name": "Search Engine Advertising",
+    "description": "Effective search engine advertising campaigns to boost your online presence.",
+    "price": 300,
+    "category": "Marketing",
+    "features": ["Ad creation", "Budget management", "Performance analysis"]
+  },
+  {
+    "name": "Software Development",
+    "description": "Custom software development services tailored to your business needs.",
+    "price": 5000,
+    "category": "Development",
+    "features": ["Custom features", "Scalable solutions", "Ongoing support"]
+  },
+  {
+    "name": "Video Editing Services",
+    "description": "Professional video editing services to create engaging video content.",
+    "price": 200,
+    "category": "Video",
+    "features": ["High-quality editing", "Color correction", "Sound editing"]
+  },
+  {
+    "name": "Voiceover Services",
+    "description": "Professional voiceover services for commercials, videos, and more.",
+    "price": 150,
+    "category": "Video",
+    "features": ["Multiple accents", "Fast delivery", "High-quality audio"]
+  },
+  {
+    "name": "UX/UI Design",
+    "description": "Creating user-centric designs for websites and mobile applications.",
+    "price": 1000,
+    "category": "Design",
+    "features": ["User research", "Prototyping", "User testing"]
+  },
+  {
+    "name": "Virtual Reality Experiences",
+    "description": "Developing immersive virtual reality experiences for various applications.",
+    "price": 3000,
+    "category": "Development",
+    "features": [
+      "Custom VR content",
+      "Cross-platform compatibility",
+      "Regular updates"
+    ]
+  },
+  {
+    "name": "Business Consulting",
+    "description": "Providing expert business consulting services to enhance your operations.",
+    "price": 1000,
+    "category": "Support",
+    "features": [
+      "Strategic planning",
+      "Market analysis",
+      "Performance improvement"
+    ]
+  },
+  {
+    "name": "Professional Translation Services",
+    "description": "Accurate and reliable translation services for multiple languages.",
+    "price": 50,
+    "category": "Writing",
+    "features": [
+      "Certified translators",
+      "Fast turnaround",
+      "Confidentiality assured"
+    ]
+  },
+  {
+    "name": "Video Animation Services",
+    "description": "Creating engaging and professional video animations for various purposes.",
+    "price": 800,
+    "category": "Video",
+    "features": ["Custom animations", "Storyboarding", "Voiceover integration"]
+  },
+  {
+    "name": "Web Maintenance Services",
+    "description": "Ongoing website maintenance to keep your site running smoothly and securely.",
+    "price": 100,
+    "category": "Support",
+    "features": ["Regular updates", "Security patches", "Backup management"]
+  },
+  {
+    "name": "Pay-Per-Click Advertising",
+    "description": "Effective PPC campaigns to drive targeted traffic to your website.",
+    "price": 250,
+    "category": "Marketing",
+    "features": ["Ad creation", "Budget management", "Performance tracking"]
+  },
+  {
+    "name": "Infographic Design",
+    "description": "Creating visually appealing infographics to convey your data and message clearly.",
+    "price": 300,
+    "category": "Design",
+    "features": [
+      "Custom designs",
+      "Unlimited revisions",
+      "High-resolution files"
+    ]
+  },
+  {
+    "name": "Web Application Development",
+    "description": "Building robust web applications tailored to your business needs.",
+    "price": 3500,
+    "category": "Development",
+    "features": ["Custom features", "Scalable solutions", "API integrations"]
+  },
+  {
+    "name": "Product Photography",
+    "description": "High-quality product photography to showcase your items in the best light.",
+    "price": 200,
+    "category": "Photography",
+    "features": [
+      "High-resolution images",
+      "Editing included",
+      "Quick turnaround"
+    ]
+  },
+  {
+    "name": "Social Media Advertising",
+    "description": "Creating and managing social media ad campaigns to increase brand awareness.",
+    "price": 400,
+    "category": "Marketing",
+    "features": [
+      "Ad creation",
+      "Target audience analysis",
+      "Performance reports"
+    ]
+  },
+  {
+    "name": "Technical Writing Services",
+    "description": "Professional technical writing services for manuals, guides, and documentation.",
+    "price": 150,
+    "category": "Writing",
+    "features": [
+      "Clear and concise content",
+      "Expert writers",
+      "Quick turnaround"
+    ]
+  },
+  {
+    "name": "Dedicated Server Hosting",
+    "description": "High-performance dedicated servers for your business hosting needs.",
+    "price": 120,
+    "category": "Hosting",
+    "features": ["Full root access", "24/7 support", "99.9% uptime"]
+  },
+  {
+    "name": "Marketing Consultation",
+    "description": "Expert marketing consultation to develop strategies that drive business growth.",
+    "price": 500,
+    "category": "Marketing",
+    "features": [
+      "Market analysis",
+      "Strategy development",
+      "Performance monitoring"
+    ]
+  },
+  {
+    "name": "Interior Design Services",
+    "description": "Professional interior design services to transform your space into something amazing.",
+    "price": 2000,
+    "category": "Design",
+    "features": ["Custom designs", "3D renderings", "Project management"]
+  },
+  {
+    "name": "Cloud Computing Services",
+    "description": "Scalable and secure cloud computing solutions for businesses of all sizes.",
+    "price": 400,
+    "category": "Hosting",
+    "features": ["Flexible plans", "Data security", "24/7 support"]
+  },
+  {
+    "name": "Professional Blogging Services",
+    "description": "Creating engaging blog content to drive traffic and build your brand.",
+    "price": 75,
+    "category": "Writing",
+    "features": [
+      "SEO-friendly content",
+      "Unlimited revisions",
+      "Quick turnaround"
+    ]
+  },
+  {
+    "name": "Data Analysis Services",
+    "description": "Comprehensive data analysis to provide insights and inform business decisions.",
+    "price": 800,
+    "category": "Support",
+    "features": ["Detailed reports", "Actionable insights", "Expert analysts"]
+  },
+  {
+    "name": "Custom Illustration Services",
+    "description": "Creating unique and custom illustrations for your project needs.",
+    "price": 350,
+    "category": "Design",
+    "features": [
+      "Multiple styles",
+      "Unlimited revisions",
+      "High-resolution files"
+    ]
+  },
+  {
+    "name": "App Store Optimization",
+    "description": "Improving your app’s visibility and ranking in app stores.",
+    "price": 500,
+    "category": "Marketing",
+    "features": [
+      "Keyword optimization",
+      "App description",
+      "Performance tracking"
+    ]
+  },
+  {
+    "name": "Remote IT Support",
+    "description": "Providing remote IT support to resolve technical issues quickly and efficiently.",
+    "price": 50,
+    "category": "Support",
+    "features": [
+      "24/7 availability",
+      "Quick response time",
+      "Expert technicians"
+    ]
+  },
+  {
+    "name": "Podcast Production",
+    "description": "Professional podcast production services to create high-quality audio content.",
+    "price": 600,
+    "category": "Video",
+    "features": ["Editing", "Sound design", "Publishing assistance"]
+  },
+  {
+    "name": "Motion Graphics Design",
+    "description": "Creating dynamic motion graphics to enhance your video content.",
+    "price": 1000,
+    "category": "Video",
+    "features": [
+      "Custom animations",
+      "High-quality visuals",
+      "Unlimited revisions"
+    ]
+  },
+  {
+    "name": "Professional Copywriting",
+    "description": "High-quality copywriting services to engage your audience and drive conversions.",
+    "price": 120,
+    "category": "Writing",
+    "features": ["SEO-friendly", "Unlimited revisions", "Quick turnaround"]
+  },
+  {
+    "name": "Virtual Reality Training",
+    "description": "Developing immersive VR training programs for various industries.",
+    "price": 5000,
+    "category": "Development",
+    "features": [
+      "Custom content",
+      "Interactive elements",
+      "Cross-platform compatibility"
+    ]
+  }
+]

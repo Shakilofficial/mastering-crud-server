@@ -33,11 +33,36 @@ router.get("/", (req, res) => {
   res.send("Welcome to Clean Co API");
 });
 
-// Route to fetch services
+// Route to fetch services & different categorize & sorting by Price sort oder=asc/desc
+//Pagination format
 router.get("/services", verifyToken, async (req, res) => {
+  let queryObj = {};
+  let sortObj = {};
+  const category = req.query.category;
+  const sortField = req.query.sortField;
+  const sortOrder = req.query.sortOrder;
+
+  //pagination
+  const page = Number(req.query.page);
+  const limit = Number(req.query.limit);
+  const skip = (page - 1) * limit;
+
+  if (category) {
+    queryObj.category = category;
+  }
+  if (sortField && sortOrder) {
+    sortObj[sortField] = sortOrder;
+  }
   const serviceCollection = getCollection("services");
-  const result = await serviceCollection.find({}).toArray();
-  res.send(result);
+  const cursor = serviceCollection
+    .find(queryObj)
+    .skip(skip)
+    .limit(limit)
+    .sort(sortObj);
+  const result = await cursor.toArray();
+  //count data
+  const total = await serviceCollection.countDocuments();
+  res.send({ total, result });
 });
 
 // Route to fetch bookings by user email
@@ -65,7 +90,7 @@ router.post("/auth/access-token", async (req, res) => {
   res
     .cookie("token", token, {
       httpOnly: true,
-      secure: false,
+      secure: true,
       sameSite: "none",
     })
     .send({ success: true });
