@@ -43,7 +43,8 @@ router.get("/service/:serviceId", verifyToken, async (req, res) => {
 });
 
 // Route to fetch services & different categorize & sorting by Price sort oder=asc/desc
-//Pagination format
+// Pagination format 
+
 router.get("/services", verifyToken, async (req, res) => {
   let queryObj = {};
   let sortObj = {};
@@ -51,7 +52,7 @@ router.get("/services", verifyToken, async (req, res) => {
   const sortField = req.query.sortField;
   const sortOrder = req.query.sortOrder;
 
-  //pagination
+  // pagination logic
   const page = Number(req.query.page);
   const limit = Number(req.query.limit);
   const skip = (page - 1) * limit;
