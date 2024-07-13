@@ -33,6 +33,15 @@ router.get("/", (req, res) => {
   res.send("Welcome to Clean Co API");
 });
 
+//Fetch data by Id
+router.get("/service/:serviceId", verifyToken, async (req, res) => {
+  const id = req.params.serviceId;
+  const query = { _id: new ObjectId(id) };
+  const serviceCollection = getCollection("services");
+  const result = await serviceCollection.findOne(query);
+  res.send(result);
+});
+
 // Route to fetch services & different categorize & sorting by Price sort oder=asc/desc
 //Pagination format
 router.get("/services", verifyToken, async (req, res) => {
